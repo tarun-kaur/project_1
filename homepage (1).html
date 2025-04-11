@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Butter Bliss - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background-image: url('images/bgg.jpeg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: #333;
+    }
+
+    nav.navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #b3541e;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    
+
+    }
+
+    nav ul li a:hover {
+      color: #f28a4b;
+    }
+
+    .logo img {
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      border-radius: 2px solid #f28a4b;
+
+    }
+
+    .hero {
+      max-width: 600px;
+      margin: 80px auto;
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 40px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+    .image-gallery {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 40px 20px 0;
+    }
+    .image-gallery img {
+      width: 200px;
+      height: 200px;
+      gap: 30px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+    .image-gallery img:hover {
+      transform: scale(1.05);
+    }
+
+
+    .hero h2 {
+      font-size: 32px;
+      color: #c96a32;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .cta-button {
+      margin-top: 25px;
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: #f28a4b;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #d86b2e;
+    }
+
+    .footer-container {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 3rem;
+      display: flex;
+      justify-content: space-around;
+      color: #333;
+      margin-top: 60px;
+    }
+
+    .Footer-heading {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .Footer-heading h2 {
+      margin-bottom: 10px;
+      color: #b3541e;
+    }
+
+    .Footer-heading a {
+      color: #666;
+      margin-bottom: 5px;
+      text-decoration: none;
+    }
+
+    .Footer-heading a:hover {
+      text-decoration: underline;
+    }
+
+    .email {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+    }
+
+    .email input[type=email] {
+      width: 220px;
+      height: 40px;
+      margin-bottom: 10px;
+      padding-left: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .email input[type=submit] {
+      padding: 10px 20px;
+      background-color: #f28a4b;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .email input[type=submit]:hover {
+      background-color: #d86b2e;
+    }
+
+    .container p {
+      text-align: center;
+      padding: 20px 0;
+      color: #555;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="images/Capture2.PNG" alt="Butter Bliss Logo" />
+      </div>
+      <ul>
+         <li><a href="homepage (1).html">Home</a></li>
+         <li><a href="about us (1).html">About Us</a></li> 
+         <li><a href="menu (1).html">Menu</a></li>
+         <li><a href="review (1).html">Review</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="image-gallery">
+    <img src="images\bk_img1.jpg" alt="Bakery Item 1">
+    <img src="images\bk_img2.jpeg" alt="Bakery Item 1">
+    <img src="images\bk_img3.jpg" alt="Bakery Item 1">
+    <img src="images\bk_img4.jpg" alt="Bakery Item 1">
+  </section>
+
+
+  <section class="hero">
+    <h2>Cakes and Bakes</h2>
+    <p>
+      For most of us, baking goes beyond a hobby. Instead, it's a therapy session — a gooey mug cake to ease a heartbreak,
+      a bubbly lasagna for a much-needed brunch with friends, or a quick one-pan dish when you're off the clock.
+    </p>
+    <button class="cta-button">Order Now</button>
+  </section>
+
+  <footer class="footer-container">
+    <div class="Footer-heading">
+      <h2>About Us</h2>
+      <a href="#">Blog</a>
+      <a href="#">Demo</a>
+      <a href="#">Customers</a>
+      <a href="#">Investors</a>
+      <a href="#">Terms of Service</a>
+    </div>
+    <div class="Footer-heading">
+      <h2>Menu</h2>
+      <a href="#">Cakes</a>
+      <a href="#">Pastries</a>
+      <a href="#">Bread</a>
+      <a href="#">Custom Orders</a>
+    </div>
+    <div class="email">
+      <h2>Stay Connected</h2>
+      <input type="email" placeholder="Enter your email address" />
+      <input type="submit" value="Sign Up" />
+    </div>
+  </footer>
+
+  <div class="container">
+    <p>&copy; 2025 Butter Bliss Bakery. All rights reserved.</p>
+  </div>
+</body>
+</html>

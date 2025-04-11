@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Butter Bliss</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+            text-decoration: none;
+        }
+
+        body {
+            background-color: #f5f0eb;
+            color: #5a3e36;
+        }
+
+        nav.navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: #b3541e;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #f28a4b;
+        }
+
+        .logo img {
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #f28a4b;
+        }
+
+        .menu {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .menu h2 {
+            font-size: 2.5rem;
+            color: #843707;
+            margin-bottom: 30px;
+        }
+
+        .menu-item {
+            background: #fff7f0;
+            border: 1px solid #e0d6ce;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 700px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-item img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 10px;
+            margin: 15px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-item h3 {
+            margin-top: 10px;
+            color: #f28a4b;
+        }
+
+        .menu-item p {
+            font-size: 1.1rem;
+            color: #4b3c39;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #b3541e;
+        }
+
+        .footer-container {
+            background-color: #fff;
+            padding: 3rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .footer-container h2 {
+            color: #b3541e;
+            margin-bottom: 10px;
+        }
+
+        .footer-container input[type=email],
+        .footer-container input[type=submit] {
+            height: 40px;
+            padding: 0 10px;
+            font-size: 1rem;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        .footer-container input[type=submit] {
+            background-color: #f28a4b;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        .footer-container input[type=submit]:hover {
+            background-color: #d86b2e;
+        }
+
+        .container p {
+            text-align: center;
+            padding: 20px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"> 
+                <img src="images/Capture2.PNG" alt="Butter Bliss Logo">
+            </div>
+            <ul>
+                <li><a href="homepage (1).html">Home</a></li>
+                <li><a href="about us (1).html">About Us</a></li> 
+                <li><a href="menu (1).html">Menu</a></li>
+                <li><a href="review (1).html">Review</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+
+            <div class="menu-item">
+                <h3>Fresh Breads</h3>
+                <img src="images/breads.png" alt="Fresh Breads">
+                <p>Artisan bread baked daily, perfect for sandwiches or to enjoy with butter.</p>
+                <p class="price">Starting at Rs.250</p>
+            </div>
+
+            <div class="menu-item">
+                <h3>Cake</h3>
+                <img src="images/cake1.png" alt="Chocolate Cake">
+                <p>Rich and moist chocolate cake layered with creamy chocolate frosting.</p>
+                <p class="price">Starting at Rs.699.00 (serves 8)</p>
+            </div>
+
+            <div class="menu-item">
+                <h3>Fruit Tart</h3>
+                <img src="images/strawberry special.png" alt="Fruit Tart">
+                <p>Delicious tart filled with pastry cream and topped with fresh seasonal fruits.</p>
+                <p class="price">Starting at Rs.200.00</p>
+            </div>
+
+            <div class="menu-item">
+                <h3>Cookies</h3>
+                <img src="images/biscuties & cookies.png" alt="Cookies">
+                <p>Soft and chewy cookies available in chocolate chip, oatmeal raisin, and more.</p>
+                <p class="price">Starting at Rs.299.00 each</p>
+            </div>
+
+            <div class="menu-item">
+                <h3>Croissants</h3>
+                <img src="images/croissants.png" alt="Croissants">
+                <p>Flaky and buttery croissants, perfect for breakfast or a snack.</p>
+                <p class="price">Starting at Rs.459.00 each</p>
+            </div>
+
+            <div class="menu-item">
+                <h3>Custom Cakes</h3>
+                <img src="images\img5.jpg" alt="Custom Cakes">
+                <p>Order a custom cake for your special occasion. Prices vary based on design.</p>
+                <p class="price">Starting at Rs.59.00 each</p>
+            </div>
+            <div class="menu-item">
+                <h3>Donuts</h3>
+                <img src="images\img6.jpg" alt="Cookies">
+                <p>Bite into joy , Our Donuts are made to delight.</p>
+                <p class="price">Starting at Rs.69.00 each</p>
+            </div>
+            <div class="menu-item">
+                <h3>Fingure buns</h3>
+                <img src="images\img7.jpg" alt="Cookies">
+                <p>Whether it is a morning tea,Sunday brunch or an Afternoon pick-me-up.</p>
+                <p class="price">Starting at Rs.79.00 each</p>
+            </div>
+            <div class="menu-item">
+                <h3>Bluberry-Cream Cheese Pastries</h3>
+                <img src="images\img8.jpg" alt="Cookies">
+                <p>Crispy outside, Creamy inside, Bustring with Blueberry joy.</p>
+                <p class="price">Starting at Rs.59.00each</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer class="footer-container">
+        <div>
+            <h2>Stay Connected</h2>
+            <input type="email" placeholder="Enter your email">
+            <input type="submit" value="Sign Up">
+        </div>
+        <div>
+            <h2>Explore</h2>
+            <p><a href="homepage (1).html">Home</a> | <a href="about us (1).html">About</a> | <a href="menu (1).html">Menu</a> | <a href="review (1).html">Review</a></p>
+        </div>
+    </footer>
+
+    <div class="container">
+        <p>&copy; 2025 Butter Bliss Bakery. All rights reserved.</p>
+    </div>
+</body>
+</html>
